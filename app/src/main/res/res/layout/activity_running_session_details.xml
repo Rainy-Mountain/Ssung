@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- 정보 표시 -->
+    <TextView
+        android:id="@+id/sessionCourseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Course: "
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sessionDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Date: "
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sessionTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Time: "
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sessionPaceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pace: "
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/sessionMaxParticipantsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Max Participants: "
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <!-- 버튼 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp">
+
+        <!-- 참여 버튼 -->
+        <Button
+            android:id="@+id/participateButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="채팅 참여"
+            android:textSize="18sp"
+            android:backgroundTint="#00796B"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="취소"
+            android:textSize="18sp"
+            android:backgroundTint="#C34336"
+            android:textColor="@color/white"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>
+

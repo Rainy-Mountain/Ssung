@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+
+    <!-- 네이버 지도 Fragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:name="com.naver.maps.map.MapFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/info_container" />
+
+    <!-- 하단 정보 컨테이너 -->
+    <LinearLayout
+        android:id="@+id/info_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#EDEDED"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintTop_toBottomOf="@id/map_fragment"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- 키로수 정보 -->
+        <TextView
+            android:id="@+id/distance_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="키로수: 0km"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <!-- 페이스 정보 -->
+        <TextView
+            android:id="@+id/pace_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="페이스: 0분/km"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <!-- 칼로리 정보 -->
+        <TextView
+            android:id="@+id/calorie_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="칼로리 소모량: 0kcal"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <!-- 평가 내용 -->
+        <TextView
+            android:id="@+id/evaluation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="aa"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

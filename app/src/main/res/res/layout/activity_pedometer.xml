@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".PedometerActivity">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="만보기 앱"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <!-- 걸음수 -->
+    <TextView
+        android:id="@+id/stepCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 걸음"
+        android:textSize="36sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <!-- 시간 -->
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시간: 00:00:00"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/black" />
+
+    <!-- 칼로리 정보 -->
+    <TextView
+        android:id="@+id/calorieView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="칼로리: 0 kcal"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black" />
+
+    <!-- 버튼 컨테이너 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- 시작 버튼 -->
+        <Button
+            android:id="@+id/startTrackingButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="시작"
+            android:textSize="16sp"
+            android:backgroundTint="#00796B"
+            android:textColor="@color/white"
+            android:elevation="4dp"
+            android:layout_marginEnd="8dp" />
+
+        <!-- 종료 버튼 -->
+        <Button
+            android:id="@+id/stopTrackingButton"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:text="종료"
+            android:textSize="16sp"
+            android:backgroundTint="#C34336"
+            android:textColor="@color/white"
+            android:elevation="4dp" />
+    </LinearLayout>
+</LinearLayout>

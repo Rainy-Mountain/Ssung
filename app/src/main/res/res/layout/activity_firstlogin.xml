@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:weightSum="6">
+
+    <!-- 제목 -->
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="회원가입"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+
+    <!-- 닉네임 입력 및 중복 확인 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:hint="닉네임"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_check_nickname"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/btn_check_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="중복 확인"
+            android:backgroundTint="#C0F7FA"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/et_nickname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_nickname"
+            app:layout_constraintBottom_toBottomOf="@+id/et_nickname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 이메일 입력 -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+        android:layout_marginTop="10dp"
+        android:hint="이메일" />
+
+    <!-- 비밀번호 입력 -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호"
+        />
+
+    <!-- 비밀번호 확인 -->
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginTop="10dp"
+        android:hint="비밀번호 확인" />
+
+    <!-- 가입 버튼 -->
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#C0F7FA"
+        android:textColor="#000000"
+        android:text="가입하기"
+        android:textSize="20sp" />
+
+</LinearLayout>

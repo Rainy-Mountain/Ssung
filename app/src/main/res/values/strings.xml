@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test1</string>
+    <string name="title_activity_bottom_navi">BottomNaviActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="default_web_client_id">848601256991-vsao2cm95792toqnnn2e27mmfeklv8u4.apps.googleusercontent.com</string>
+    <string name="success_login">구글 로그인 성공</string>
+    <string name="failed_login">구글 로그인 실패</string>
+    <string name="success_logout">로그아웃 되었습니다</string>
+    <string name="status_login">이미 로그인 되어있습니다</string>
+</resources>

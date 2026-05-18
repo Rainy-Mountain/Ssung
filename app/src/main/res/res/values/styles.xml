@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InfoTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item> <!-- 글씨 크기 증가 -->
+        <item name="android:fontFamily">sans-serif-medium</item> <!-- 깔끔한 폰트 -->
+        <item name="android:textColor">#333333</item> <!-- 짙은 회색 -->
+    </style>
+</resources>
